@@ -13,7 +13,7 @@ header{
     width:1170px;
     margin: auto;
     padding: 21px 0 7px;
-    background-color: rgba(225, 225, 225, 0.72);
+    background-color: rgba(255, 255, 255, 0.72);
     backdrop-filter: blur(20px);
     position: sticky;
     top: 0;
@@ -131,6 +131,68 @@ header{
     animation: FadeInDown 0.25s forwards;
 }
 
+#show-more-menu{
+    position: relative;
+}
+#show-more-menu ul{
+    position: absolute;
+    top: 0;
+    left: -35px;
+    background-color: #fff;
+    border-top: 5px solid #f8e88b;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    list-style: none;
+    width: 123px;
+    display: none;
+}
+
+#show-more-menu li {
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    color: black;
+}
+
+#show-more-menu li:hover{
+    background-color: rgba(232 , 239 , 254, 0.6);
+}
+
+#show-product-menu{
+    position: relative;
+}
+
+.product-menu{
+    position: absolute;
+    top: 0;
+    left: -135px;
+    background-color: #fff;
+    display: none;
+    justify-content: flex-start;
+    width: 372px;
+    border-top: 5px solid #f8e88b;
+    border-radius: 12px;
+    padding-top: 5px;
+    margin-top: 23px;
+}
+
+.product-menu a p:first-child{
+    color: #000;
+    font-size: 0.95rem;
+}
+.product-menu a p:last-child{
+    color:#000;
+    font-size: 0.7rem;
+}
+.product-menu a{
+    margin: 10px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
 @keyframes FadeInDown {
     0% {
         opacity: 0;
@@ -141,6 +203,14 @@ header{
         transform: translateY(0);
     }
     
+}
+@keyframes ShowFrame {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 
